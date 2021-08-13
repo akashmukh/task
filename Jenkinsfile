@@ -22,5 +22,10 @@ pipeline {
                       }
                     }
                   }
+           steps {
+               script {
+                   echo $Choice
                 }
                }
+             }
+           }
