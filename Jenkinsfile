@@ -1,4 +1,4 @@
-def obbject = readJSON file: "test.json"
+def obbject = ""
 
 pipeline {
     agent any
@@ -16,6 +16,8 @@ pipeline {
                            // }
                            //echo "$entry.key -> $entry.value"
                             //}
+                            sh 'ls'
+                             object= readJSON file: 'test.json', text: ''
                              object.each { key, value ->
                              echo "Walked through key $key and value $value"
                             }
