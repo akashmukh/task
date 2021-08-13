@@ -1,19 +1,21 @@
+def obbject = ""
+
 pipeline {
     agent any
+    
     stages {
-        stage('Setup parameters') {
+        stage('Initialize') {
             steps {
-                script { 
-                    properties([
-                        parameters([
-                            choice(
-                                choices: ['ONE', 'TWO'], 
-                                name: 'PARAMETER_01'
-                            )
-                          ])
-                        ])
-                       } 
+                script {
+                        sh 'ls'
+                        object= readJSON file: 'test.json', text: ''
+                        echo object["a"]
+                       // object.each { key, value ->
+                        //echo "$key = $value"
+                        
+                       }
                       }
-                     }
                     }
-                   }
+                  }
+                }
+              //}
