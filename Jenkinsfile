@@ -11,7 +11,7 @@ pipeline {
                         object= readJSON file: 'test.json', text: ''
                         //object.each { key, value ->
                         //echo "$key = $value"
-                        echo " Enter key: "
+                        echo " Enter key: a"
                        }
                       }
                     }
