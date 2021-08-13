@@ -22,7 +22,7 @@ pipeline {
                       }
                     }
                   }
-        stage('Initialize') {
+        stage('PRINT') {
            steps {
                script {
                    echo $Choice
