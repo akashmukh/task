@@ -25,7 +25,7 @@ pipeline {
         stage('PRINT') {
            steps {
                script {
-                   echo "$Choice"
+                   echo "$d"
                  }
                }
              }
