@@ -16,6 +16,7 @@ pipeline {
                            // }
                            //echo "$entry.key -> $entry.value"
                             //}
+                            echo $object["a"]
                         }
                     }
                 }
