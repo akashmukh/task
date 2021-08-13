@@ -15,8 +15,9 @@ pipeline {
                         //echo object["a"]
                         object.each { key, value ->
                             if (params.Choice == "$key") {
-                                echo "$value"    
+                                echo "$value"
                             }
+                            $Choice = $value
                         //echo "$key = $value"      
                        }
                       }
@@ -25,7 +26,7 @@ pipeline {
         stage('PRINT') {
            steps {
                script {
-                   echo "$d"
+                   echo "$Choice"
                  }
                }
              }
