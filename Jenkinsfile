@@ -1,5 +1,5 @@
 def obbject = ""
-def name = ""
+
 pipeline {
     agent any
     
@@ -14,9 +14,8 @@ pipeline {
                         object= readJSON file: 'test.json', text: ''
                         //echo object["a"]
                         object.each { key, value ->
-                            name = $key
-                            if (params.Choice == $name) {
-                                echo $value    
+                            if (params.Choice == "$key") {
+                                echo "$value"    
                             }
                         //echo "$key = $value"      
                        }
