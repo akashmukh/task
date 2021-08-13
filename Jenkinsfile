@@ -25,8 +25,8 @@ pipeline {
         stage('PRINT') {
            steps {
                script {
-                   echo "$key"
-                }
+                   echo "$Choice"
+                 }
                }
              }
            }
