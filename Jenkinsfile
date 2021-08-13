@@ -3,9 +3,9 @@ def obbject = ""
 pipeline {
     agent any
     
-    //parameters {
-      //  string(name: 'Choice',  defaultValue: '',  description: '')
-    //}
+    parameters {
+        string(name: 'Choice',  defaultValue: '',  description: '')
+    }
     stages {
         stage('Initialize') {
             steps {
@@ -17,10 +17,10 @@ pipeline {
                         if (params.Choice == $key) {
                         echo $value    
                         }
-                        //echo "$key = $value"
-                        
+                        //echo "$key = $value"      
                        }
                       }
                     }
                   }
                 }
+               }
