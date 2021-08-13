@@ -9,7 +9,7 @@ pipeline {
                 script {
                         sh 'ls'
                         object= readJSON file: 'test.json', text: ''
-                        object.each { key, value ->
+                        //object.each { key, value ->
                         //echo "$key = $value"
                         echo " Enter key: "
                        }
