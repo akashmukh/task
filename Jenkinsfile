@@ -1,11 +1,11 @@
 def obbject = ""
 
 pipeline {
-    agent any 
+    agent any
     
-    parameters {
-        string(name: 'Choice',  defaultValue: '',  description: '')
-    }
+    //parameters {
+      //  string(name: 'Choice',  defaultValue: '',  description: '')
+    //}
     stages {
         stage('Initialize') {
             steps {
