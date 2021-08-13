@@ -1,7 +1,7 @@
 def obbject = ""
 
 pipeline {
-    agent any
+    agent any 
     
     parameters {
         string(name: 'Choice',  defaultValue: '',  description: '')
@@ -24,4 +24,3 @@ pipeline {
                     }
                   }
                 }
-              //}
