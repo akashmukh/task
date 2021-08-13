@@ -22,6 +22,7 @@ pipeline {
                       }
                     }
                   }
+        stage('Initialize') {
            steps {
                script {
                    echo $Choice
@@ -29,3 +30,4 @@ pipeline {
                }
              }
            }
+         }
