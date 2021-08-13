@@ -16,9 +16,10 @@ pipeline {
                            // }
                            //echo "$entry.key -> $entry.value"
                             //}
-                            echo $object["a"]
+                             object.each { key, value ->
+                             echo "Walked through key $key and value $value"
+                            }
                         }
                     }
                 }
             }
-        }
