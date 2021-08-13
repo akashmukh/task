@@ -19,7 +19,7 @@ pipeline {
                             sh 'ls'
                              object= readJSON file: 'test.json', text: ''
                              object.each { key, value ->
-                             echo "Walked through key $key and value $value"
+                             echo "$key = $value"
                             }
                         }
                     }
