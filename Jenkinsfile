@@ -11,7 +11,7 @@ pipeline {
                         //stage (entry.key) {
                             //timestamps{
                             for (key in object.element.keySet()) {
-                                echo "key=${key} 
+                                echo "key=${key}"
                                 echo "value= ${object.element.get(key)}"
                             }
                            //echo "$entry.key -> $entry.value"
