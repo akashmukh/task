@@ -17,7 +17,7 @@ pipeline {
                           if (params.Choice == "$key") {
                                 echo "$value"
                           }
-                            name= $value
+                        name= $value
                         //echo "$key = $value"      
                        }
                       }
@@ -26,7 +26,7 @@ pipeline {
         stage('PRINT') {
            steps {
                script {
-                   echo "$object"
+                   echo "$name"
                  }
                }
              }
