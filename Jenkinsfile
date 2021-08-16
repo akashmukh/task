@@ -1,5 +1,5 @@
-def obbject = ""
-
+def obbject = "readJSON file: 'test.json', text: ''"
+object.each { key, value ->
 pipeline {
     agent any
     
@@ -12,8 +12,8 @@ pipeline {
             steps {
                 script {
                         sh 'ls'
-                        object= readJSON file: 'test.json', text: ''
-                        object.each { key, value ->
+                        //object= readJSON file: 'test.json', text: ''
+                       // object.each { key, value ->
                             if (params.Choice == "$key") {
                                 echo "$value"
                             }
