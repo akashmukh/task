@@ -1,5 +1,4 @@
 def obbject = ""
-def val= ""
 
 pipeline {
     agent any
@@ -14,8 +13,7 @@ pipeline {
                         object.each { key, value ->
                                 echo "$key"
                                 echo "$value"
-                                $key= "$value"
-                        //echo "$key = $value"      
+                                $key= "$value"      
                        }
                         echo object.a
                       }
