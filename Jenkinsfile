@@ -23,7 +23,7 @@ pipeline {
         stage('PRINT') {
            steps {
                script {
-                   echo "$a"
+                   echo "${a}"
                  }
                }
              }
