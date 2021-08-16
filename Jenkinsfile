@@ -14,7 +14,7 @@ pipeline {
                         object.each { key, value ->
                        
                                 echo "$value"
-                                "$key"= "$value"
+                                $key= "$value"
                         //echo "$key = $value"      
                        }
                       }
