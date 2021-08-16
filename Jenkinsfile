@@ -25,7 +25,7 @@ pipeline {
         stage('PRINT') {
            steps {
                script {
-                   echo "$params.Choice"
+                   echo "$value"
                  }
                }
              }
