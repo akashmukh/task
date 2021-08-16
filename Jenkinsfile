@@ -12,18 +12,19 @@ pipeline {
                         sh 'ls'
                         object= readJSON file: 'test.json', text: ''
                         object.each { key, value ->
-                       
+                                echo "$key"
                                 echo "$value"
                                 $key= "$value"
                         //echo "$key = $value"      
                        }
+                        echo "$a"
                       }
                     }
                   }
         stage('PRINT') {
            steps {
                script {
-                   echo "${a}"
+                   echo "a"
                  }
                }
              }
