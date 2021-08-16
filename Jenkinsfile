@@ -15,7 +15,6 @@ pipeline {
                        
                                 echo "$value"
                                 "$key"= "$value"
-                        }
                         //echo "$key = $value"      
                        }
                       }
