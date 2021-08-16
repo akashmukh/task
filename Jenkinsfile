@@ -24,7 +24,7 @@ pipeline {
         stage('PRINT') {
            steps {
                script {
-                   echo "a"
+                   echo object.b
                  }
                }
              }
