@@ -17,7 +17,8 @@ pipeline {
                           if (params.Choice == "$key") {
                                 echo "$value"
                           }
-                        name= $value
+                            name.each { $value ->
+                            }
                         //echo "$key = $value"      
                        }
                       }
