@@ -17,7 +17,7 @@ pipeline {
                                 $key= "$value"
                         //echo "$key = $value"      
                        }
-                        echo "$a"
+                        echo object.a
                       }
                     }
                   }
