@@ -1,8 +1,10 @@
-def obbject = "readJSON file: 'test.json', text: ''"
-object.each { key, value ->
+def obbject = ""
+
 pipeline {
     agent any
-    
+
+    object= readJSON file: 'test.json', text: ''
+    object.each { key, value ->
     parameters {
         string(name: 'Choice',  defaultValue: '',  description: '')
         
