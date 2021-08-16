@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script {
                         sh 'ls'
-                        object= readJSON file: 'test.json', text: '{ "key": null, "a": "b" }'
+                        object= readJSON file: 'test.json', text: '{ "key": null }'
                         assert object['key'] == null
                         object.each { key, value ->
                           if (params.Choice == "$key") {
