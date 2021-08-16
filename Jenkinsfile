@@ -1,5 +1,5 @@
 def obbject = ""
-//def name= ""
+def name= ""
 
 pipeline {
     agent any
@@ -16,8 +16,8 @@ pipeline {
                         object.each { key, value ->
                           if (params.Choice == "$key") {
                                 echo "$value"
-                                //name= $value
                           }
+                            name= $value
                         //echo "$key = $value"      
                        }
                       }
