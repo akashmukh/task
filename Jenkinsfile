@@ -1,5 +1,5 @@
 def obbject = ""
-def name= ""
+def value= ""
 
 pipeline {
     agent any
@@ -16,7 +16,7 @@ pipeline {
                         object.each { key, value ->
                           if (params.Choice == "$key") {
                                 echo "$value"
-                                name= "$value"
+                                value= "$value"
                           }
                         //echo "$key = $value"      
                        }
@@ -26,7 +26,7 @@ pipeline {
         stage('PRINT') {
            steps {
                script {
-                   echo "$name"
+                   echo "$value"
                  }
                }
              }
