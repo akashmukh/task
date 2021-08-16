@@ -26,7 +26,7 @@ pipeline {
         stage('PRINT') {
            steps {
                script {
-                   echo "$name"
+                   echo "$object"
                  }
                }
              }
